@@ -153,6 +153,42 @@ footer strong{color:#fff;letter-spacing:.12em}
 .social-links a{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border:1px solid rgba(255,255,255,.35);border-radius:999px;color:#fff;text-decoration:none;transition:.25s}
 .social-links a:hover{background:var(--gold);border-color:var(--gold);color:var(--navy)}
 .visits{margin-top:14px;font-size:.75rem;opacity:.55}
+.foot-line{margin-top:8px;font-size:.85rem}
+.foot-line.privacy{max-width:640px;margin-inline:auto;opacity:.8;font-size:.8rem}
+.foot-line.privacy strong{letter-spacing:0;color:#fff}
+
+/* Aprende de un experto */
+.why{background:#fff}
+.why-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:56px;align-items:center}
+.why-text{font-size:1.1rem;color:var(--ink);border-left:4px solid var(--gold);padding-left:20px}
+.pillars{list-style:none;display:grid;gap:16px}
+.pillars li{display:flex;gap:16px;align-items:center;background:var(--cream);padding:18px 20px;border-radius:var(--radius);border:1px solid #ece6d9}
+.pillars .ci{width:48px;height:48px;border-radius:12px;background:var(--teal-soft);display:grid;place-items:center;font-size:1.4rem;flex-shrink:0}
+.pillars small{display:block;color:var(--muted)}
+
+/* Cursos */
+.courses{background:var(--teal-soft)}
+.course-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px;margin-top:44px}
+.course{background:#fff;border-radius:var(--radius);padding:30px 26px;box-shadow:var(--shadow);display:flex;flex-direction:column;border-top:4px solid var(--gold);transition:.3s}
+.course:hover{transform:translateY(-6px)}
+.course .num{font-family:'Fraunces',serif;font-size:2rem;color:var(--gold);font-weight:700;line-height:1}
+.course h3{font-size:1.2rem;margin:10px 0 12px}
+.course .focus{color:var(--ink);font-size:.95rem;margin-bottom:10px}
+.course .origin{color:var(--muted);font-size:.85rem;margin-bottom:18px;flex:1}
+.course-cta{font-weight:600;color:var(--teal);text-decoration:none;font-size:.95rem}
+.course-cta:hover{color:var(--navy);text-decoration:underline}
+
+/* Perfil */
+.profile-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:28px;margin-top:48px}
+.pcard{background:#fff;border-radius:var(--radius);padding:32px 28px;box-shadow:var(--shadow);border-top:4px solid var(--teal)}
+.pcard .icon{width:52px;height:52px;border-radius:14px;background:var(--teal-soft);display:grid;place-items:center;font-size:1.5rem;margin-bottom:16px}
+.pcard h3{font-size:1.25rem;margin-bottom:14px}
+.pcard ul{list-style:none}
+.pcard li{padding:10px 0;border-bottom:1px solid #eef1f3;color:var(--muted);font-size:.93rem}
+.pcard li:last-child{border-bottom:0}
+.pcard li strong{color:var(--navy)}
+.pcard a{color:var(--teal);font-weight:600}
+@media(max-width:900px){.why-grid{grid-template-columns:1fr;gap:32px}}
 
 /* Reveal */
 .reveal{opacity:0;transform:translateY(28px);transition:.8s}
@@ -210,7 +246,8 @@ footer strong{color:#fff;letter-spacing:.12em}
     <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
     <ul id="menu">
       <li><a class="link" href="#servicios">Servicios</a></li>
-      <li><a class="link" href="#capacitador">Capacitador</a></li>
+      <li><a class="link" href="#cursos">Cursos</a></li>
+      <li><a class="link" href="#perfil">Perfil</a></li>
       <li><a class="link" href="#sesiones">Sesiones</a></li>
       <li><a class="btn btn-primary" style="padding:10px 22px" href="#contacto">Contáctanos</a></li>
     </ul>
@@ -231,6 +268,23 @@ footer strong{color:#fff;letter-spacing:.12em}
         <a href="#capacitador" class="btn btn-ghost">Conoce al capacitador</a>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- APRENDE DE UN EXPERTO -->
+<section class="why" id="experto">
+  <div class="container why-grid">
+    <div class="reveal">
+      <span class="eyebrow">Aprende de un verdadero experto</span>
+      <h2 class="section-title">Psicología clínica y experiencia judicial en un solo capacitador</h2>
+      <p class="why-text">El Mtro. Guillermo Arturo Aguirre Mada no solo entiende la mente humana como Psicólogo Clínico; también conoce las consecuencias legales y organizacionales de los conflictos cotidianos debido a su rol como Juez de lo Familiar en Hermosillo. Esta combinación única le permite dictar talleres que verdaderamente previenen crisis personales, protegen legalmente a tu empresa y blindan el clima laboral.</p>
+      <a href="#perfil" class="btn btn-primary" style="margin-top:24px">Conoce su perfil →</a>
+    </div>
+    <ul class="pillars reveal">
+      <li><span class="ci">🛡️</span><div><strong>Previene crisis personales</strong><small>Herramientas emocionales para tu equipo.</small></div></li>
+      <li><span class="ci">⚖️</span><div><strong>Protege legalmente a tu empresa</strong><small>Prevención basada en la práctica judicial.</small></div></li>
+      <li><span class="ci">🤝</span><div><strong>Blinda el clima laboral</strong><small>Mejor convivencia, mejores resultados.</small></div></li>
+    </ul>
   </div>
 </section>
 
@@ -260,6 +314,47 @@ footer strong{color:#fff;letter-spacing:.12em}
   </div>
 </section>
 
+<!-- CURSOS Y TALLERES -->
+<section class="courses" id="cursos">
+  <div class="container">
+    <div class="center">
+      <span class="eyebrow">Catálogo</span>
+      <h2 class="section-title">Cursos y talleres disponibles</h2>
+      <p class="section-lead">Temas ya impartidos, adaptables al formato y a las necesidades de tu empresa.</p>
+    </div>
+    <div class="course-grid">
+      <article class="course reveal">
+        <span class="num">01</span>
+        <h3>Gestión de Emociones</h3>
+        <p class="focus"><strong>Para tu empresa:</strong> inteligencia emocional y manejo del estrés laboral.</p>
+        <p class="origin">Impartido al personal de los Juzgados Familiares, a través del Instituto de la Judicatura Sonorense.</p>
+        <a href="#contacto" class="course-cta" data-curso="Gestión de Emociones">Solicitar este taller →</a>
+      </article>
+      <article class="course reveal">
+        <span class="num">02</span>
+        <h3>Cómo afectan los problemas de pareja en los hijos</h3>
+        <p class="focus"><strong>Para tu empresa:</strong> conciliación de la vida familiar y laboral.</p>
+        <p class="origin">Tema expuesto como especialista invitado en medios de comunicación y redes sociales.</p>
+        <a href="#contacto" class="course-cta" data-curso="Cómo afectan los problemas de pareja en los hijos">Solicitar este taller →</a>
+      </article>
+      <article class="course reveal">
+        <span class="num">03</span>
+        <h3>Criterios Jurisprudenciales en el Nuevo Proceso Familiar</h3>
+        <p class="focus"><strong>Para tu empresa:</strong> actualización y prevención legal.</p>
+        <p class="origin">Conferencia dictada recientemente en la Casa de los Saberes Jurídicos, Hermosillo.</p>
+        <a href="#contacto" class="course-cta" data-curso="Criterios Jurisprudenciales en el Nuevo Proceso Familiar">Solicitar este taller →</a>
+      </article>
+      <article class="course reveal">
+        <span class="num">04</span>
+        <h3>Los principales juicios en materia familiar</h3>
+        <p class="focus"><strong>Para tu empresa:</strong> orientación legal básica para el personal.</p>
+        <p class="origin">Impartida en escuelas y facultades de Derecho locales.</p>
+        <a href="#contacto" class="course-cta" data-curso="Los principales juicios en materia familiar">Solicitar este taller →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
 <!-- CAPACITADOR -->
 <section class="expert" id="capacitador">
   <div class="container">
@@ -281,10 +376,53 @@ footer strong{color:#fff;letter-spacing:.12em}
         </div>
         <div class="info-block">
           <h4>Experiencia laboral</h4>
-          <p>10 años de experiencia en el Poder Judicial. Actualmente es Juez Familiar, conferenciante y psicólogo clínico.</p>
+          <p>10 años de experiencia en el Poder Judicial. Actualmente es Juez de lo Familiar en Hermosillo, conferenciante y psicólogo clínico.</p>
         </div>
-        <a href="#contacto" class="btn btn-primary">Agenda una asesoría</a>
+        <div class="hero-actions">
+          <a href="#contacto" class="btn btn-primary">Agenda una asesoría</a>
+          <a href="#perfil" class="btn btn-ghost">Ver perfil completo</a>
+        </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- PERFIL -->
+<section id="perfil">
+  <div class="container">
+    <div class="center">
+      <span class="eyebrow">Perfil</span>
+      <h2 class="section-title">Mtro. Guillermo Arturo Aguirre Mada</h2>
+      <p class="section-lead">Formación académica, trayectoria institucional y práctica profesional.</p>
+    </div>
+    <div class="profile-grid">
+      <article class="pcard reveal">
+        <div class="icon">🎓</div>
+        <h3>Perfil académico</h3>
+        <ul>
+          <li><strong>Lic. en Derecho</strong> · Universidad de Sonora (2002–2007)</li>
+          <li><strong>Maestría en Derecho Penal y Oral</strong> · Universidad La Salle (2014–2016)</li>
+          <li><strong>Lic. en Psicología</strong> · Cédula Profesional Federal 14033795. Psicoterapia clínica con adultos, parejas y familias.</li>
+        </ul>
+      </article>
+      <article class="pcard reveal">
+        <div class="icon">⚖️</div>
+        <h3>Experiencia institucional</h3>
+        <ul>
+          <li><strong>Juez "B" de Primera Instancia en Materia Familiar</strong> · Juzgado Primero de lo Familiar, Hermosillo, Sonora.</li>
+          <li><strong>Ex Director General de Formación y Capacitación</strong> · Supremo Tribunal de Justicia del Estado: diseño de planes educativos y talleres.</li>
+          <li><strong>Secretario Proyectista</strong> · Salas Mixtas del Poder Judicial de Sonora (2018–2021).</li>
+        </ul>
+      </article>
+      <article class="pcard reveal">
+        <div class="icon">🏢</div>
+        <h3>Consultoría y práctica privada</h3>
+        <ul>
+          <li><strong>Director y fundador de CCEFAM</strong> · conferencias, actualización legal y talleres de desarrollo humano.</li>
+          <li><strong>Psicólogo clínico</strong> en Hermosillo (col. Villa Satélite): psicoterapia individual, intervención en crisis, orientación a padres y terapia de pareja.</li>
+          <li><strong>Perfil verificado en Doctoralia México</strong> · <a href="https://www.doctoralia.com.mx/perfil/guillermo-arturo-aguirre-mada#profile-pricing" target="_blank" rel="noopener noreferrer">ver perfil</a></li>
+        </ul>
+      </article>
     </div>
   </div>
 </section>
@@ -382,10 +520,16 @@ footer strong{color:#fff;letter-spacing:.12em}
           <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M14 8.5V6.8c0-.8.2-1.3 1.4-1.3H17V2.2C16.7 2.2 15.8 2 14.7 2 12.3 2 10.7 3.5 10.7 6.2v2.3H8v3.3h2.7V22H14v-10.2h2.6l.4-3.3H14z"/></svg>
           Facebook
         </a>
+        <a href="https://www.doctoralia.com.mx/perfil/guillermo-arturo-aguirre-mada#profile-pricing" target="_blank" rel="noopener noreferrer" aria-label="Perfil en Doctoralia">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 8h2.8a4 4 0 0 1 0 8H9.5z"/></svg>
+          Doctoralia
+        </a>
       </div>
     </div>
     <p><strong>DOMUS</strong> · Centro de Estudios Especializados en Psicología y Derecho Familiar</p>
-    <p style="margin-top:6px">© <span id="year"></span> DOMUS. Todos los derechos reservados.</p>
+    <p class="foot-line">Consultoría DOMUS / CCEFAM. Hermosillo, Sonora, México.</p>
+    <p class="foot-line privacy"><strong>Aviso de Privacidad:</strong> Sus datos corporativos están protegidos conforme a la Ley Federal de Protección de Datos Personales.</p>
+    <p class="foot-line">© <span id="year"></span> DOMUS. Todos los derechos reservados.</p>
     <p class="visits" id="visits" hidden>Visitas: <span id="visitCount">0</span></p>
   </div>
 </footer>
@@ -516,6 +660,12 @@ render(); resetProgress(); raf = requestAnimationFrame(tick);
 new IntersectionObserver(es=>{
   es.forEach(e=>{ if(e.isIntersecting && playing) resetProgress(); });
 },{threshold:.3}).observe(carousel);
+
+/* Cursos: al solicitar un taller, se precarga el comentario del formulario */
+document.querySelectorAll('[data-curso]').forEach(a=>a.addEventListener('click',()=>{
+  const c = document.getElementById('comentario');
+  c.value = `Me interesa el taller: "${a.dataset.curso}". Quisiera recibir información para mi empresa.`;
+}));
 
 /* Contacto */
 document.getElementById('showEmail').textContent = CONFIG.email;
